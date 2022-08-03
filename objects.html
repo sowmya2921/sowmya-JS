@@ -1,0 +1,87 @@
+<html>
+    <body>
+        <script>
+            var obj ={
+                "Model Name":"Galaxy S9",
+	            "Color":"Midnight Black",
+	            "Browser Type":"Smartphone",
+	            "Internal Storage":"64GB",
+	            "RAM":"4GB",
+	            "Cost":20000
+            }
+
+            console.log(obj["Model Name"])
+            console.log(obj["Color"])
+            console.log(obj["Cost"])
+
+            var i = "RAM"
+            console.log(i)
+
+            for(var k in obj)
+            {
+                console.log(k)
+                console.log(obj[k])
+            }
+
+            var expenses= {
+                coffee:15,
+                breakfast:50,
+                tea:10,
+                lunch:100,
+                snaks:20,
+                dinner:150
+            }     
+            var sum = 0
+            for (var k in expenses)
+{
+                sum=sum+expenses[k]
+            }
+            console.log(sum)
+
+            var obj = {
+                coffee:15,
+                breakfast:250,
+                tea:10,
+                lunch:300,
+                snaks:20,
+                dinner:150
+            }
+            var me=0
+            for(var k in obj)
+            {
+                if(obj[k]>me)
+                {
+                    me=obj[k]
+                }
+            }
+            console.log(me)
+
+
+            var marks={
+                deepika:300,
+                sachin:100,
+                dada:840,
+                kazal:340,
+                rani:430
+            }
+            var greater=0
+            for(var j in marks)
+            {
+                if(marks[j]>greater)
+                {
+                    greater = marks[j]
+                }
+            }
+            console.log(greater)
+
+        
+           
+
+            
+
+
+
+        
+        </script> 
+    </body>
+</html>            

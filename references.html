@@ -1,0 +1,59 @@
+<html>
+    <body>
+        <script>
+            var a = 100
+            var b
+            b=a
+            console.log(b)
+            console.log(a)
+            b=200
+            console.log(b)
+            console.log(a)
+
+            var ar = [10,30,50]
+            var br
+            br = ar
+            console.log(br)
+            console.log(ar)
+            var cr = []
+            for(var i=0;i<ar.length-1;i++)
+            {
+                cr[i]=ar[i]
+            }
+            console.log(cr)
+            br[2] = "rahul"
+            console.log(br)
+            console.log(ar)
+
+            var ob1={
+                firstname:"sowmya",
+                lastname:"shankar"
+            }
+            var ob2
+            ob2=ob1
+            console.log(ob1)
+            console.log(ob2)
+            var ob3={}
+            for(var k in ob1)
+            {
+                ob3[k]=ob1[k]
+            }
+            ob1.lastname="deepu"
+            console.log(ob2)
+            console.log(ob1)
+            console.log(ob3)
+
+
+
+
+
+
+
+
+            
+
+
+</script>
+
+    </body>
+</html>

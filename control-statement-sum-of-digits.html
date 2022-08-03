@@ -1,12 +1,60 @@
 <html>
     <body>
+        <h3>sum of numbers</h3>
+        <h3>revers of the numbers</h3>
+        <h3>given number is palindrome or not</h3>
         <script>
-            var n = 1995
-            while(n=!0)
+            var n = 1234567
+            console.log(n)
+            while(n!=0)
             {
                 console.log(n%10)
                 n = parseInt(n/10)
             }
+
+            var n = 12345
+            var sum = 0
+            var i 
+            while(n!=0)
+            {
+                i = n%10
+                sum=sum+i
+                n = parseInt(n/10)
+            }
+            console.log(sum)
+
+            var n = 1995
+            console.log(n)
+            var sum = 0
+            var i
+            while(n!=0)
+            {
+                i = n%10
+                sum=sum*10+i
+                n = parseInt(n/10)
+            }
+            console.log(sum)
+
+            var n = +prompt("enter the number")
+            var temp = n
+            var sum = 0
+            var i 
+            while(n!=0)
+            {
+                i=n%10
+                sum=sum*10+i
+                n = parseInt(n/10)
+            }
+            if(temp===sum){
+                console.log("palindrome")
+            }
+            else{
+                console.log("not a palindrome")
+            }
+            
+
+                
+            
         </script>
     </body>
 </html>
