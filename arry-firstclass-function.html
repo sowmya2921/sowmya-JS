@@ -1,0 +1,102 @@
+<html>
+    <body>
+        <h3>add value at the last of the arry</h3>
+        <h3>add value at the first of the arry </h3>
+        <h3>add the value at the 3 index and dont want to change any values of the arry</h3>
+        <h3>remove the the value of last two values of the arry</h3>
+        <h3>remove the values at the first of the arry</h3>
+        <h3>remove the value 2 index at two values of the arry</h3>
+        <h3>removed 2 values from 1 index and add the values from 1 index in the arry</h3>
+        <h3>add 5 values to the empty arry from the user </h3>
+        <h3>add two arry values in empty arry</h3>
+        <h3>find the value at the particular index in the arry</h3>
+        <script>
+            var ar = [12,33,15,35,25,22,10]
+            for(var i=0;i<=ar.length-1;i++){
+                console.log(ar[i])
+            }
+
+            var ar = [12,33,15,35,25,22,10]
+            ar.push(87)
+            console.log(ar)
+
+            ar.unshift(99)
+            console.log(ar)
+
+            ar.splice(3,0,29)
+            console.log(ar)
+
+            ar.pop()
+            ar.pop()
+            console.log(ar)
+
+            ar.shift()
+            console.log(ar)
+
+            ar.splice(3,1)
+            console.log(ar)
+
+            ar.splice(2,2)
+            console.log(ar)
+
+            ar.splice(1,2,10,20,30,40,50)
+            console.log(ar)
+
+            var br = []
+            for(i=1;i<=5;i++){
+                var x = +prompt("enter the number")
+                br.push(x)
+            }
+            console.log(br)
+
+            var ar = [10,20,30]
+            var br = [40,50,60]
+            var cr
+            cr=ar.concat(br)
+            console.log(cr)
+
+            var ar = [10,20,30,40]
+            console.log(ar)
+            var x = ar.at(2)
+            console.log(x)
+
+            var y = ar.indexOf(23)
+            console.log(y)
+
+            var z = ar.indexOf(30)
+            console.log(z)
+
+            var p = ar.includes(50)
+            console.log(p)
+
+            var q = ar.includes(30)
+            console.log(q)
+
+            var ar = [10,20,30,40]
+            var br = [50,60,70,80]
+            var s = ar.join()
+            console.log(s)
+
+            var t = ar.join('')
+            console.log(t)
+
+            var ar = [10,20,30,40,50,60,70]
+            var x = ar.slice(3)
+            console.log(x)
+            console.log(ar)
+
+            var ar = [10,20,30,40]
+            var y = ar.toString()
+            console.log(y)
+
+
+
+
+
+
+
+
+
+</script>
+    </body>
+</html>

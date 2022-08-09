@@ -1,0 +1,80 @@
+<html>
+    <body>
+        <h3>factorial of 5,7,4</h3>
+        <h3>using functions find factorial of given number</h3>
+        <h3>using functions add the numbers</h3>
+        <h3>using function sub the number</h3>
+        <h3>using function power the number</h3>
+        <script>
+            var a = 5
+            var b = 7
+            var c = 4
+            var ar=1,br=1,cr=1
+            for(var i=1;i<=a;i++){
+                ar=ar*i
+            }
+            console.log(ar)
+            for(var j=1;j<=b;j++){
+                br=br*j
+            }
+            console.log(br)
+            for(var k=1;k<=c;k++){
+                cr=cr*k
+            }
+            console.log(cr)
+
+            function facto(n){
+                var f=1;
+                for(var i=1;i<=n;i++){
+                    f=f*i;
+                }
+                return f;
+            }
+           ar = facto(a)
+           console.log(ar)
+
+           function add(x,y)
+           {
+            var z 
+            z=x+y
+            return z;
+           }
+           var g=add(500,400)
+           console.log(g)
+
+           function sub(p,q)
+           {
+            var r
+            r=p-q
+            return r;
+           }
+           var m = sub(500,400)
+           console.log(m)
+
+           function pow(x,y)
+           {
+            var z=1
+            for(i=1;i<=y;i++){
+                z=z*x
+            }
+           }
+
+           function pow(x,y)
+            {
+                var z=1
+                for(i=1;i<y;i++){
+                    z=z*x
+                }
+                return z
+            }
+
+
+            
+
+
+
+
+        </script>
+
+    </body>
+</html>

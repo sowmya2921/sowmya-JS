@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <h3>print 1 to 10</h3>
+        <h3>print multiples of 2</h3>
+        <script>
+           var i = 0
+            var timer1 = setInterval(function(){
+               i=i+1
+               console.log(i);
+                if(i===10){
+                   clearInterval(timer1)
+                }
+            },2000);
+
+            var i=0
+            var n=2
+            var timer1=setInterval(function(){
+                i=i+1
+                console.log(n*i);
+                if(i===10){
+                    clearInterval(timer1)
+                }
+            },2000);
+
+            setTimeout(function(){
+                console.log("hello")
+            },6000);
+
+           
+        </script>
+    </body>
+</html>
