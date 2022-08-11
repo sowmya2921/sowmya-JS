@@ -1,0 +1,65 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>Welcome to document object</h1>
+        <h2>this is all about how we handel the webpages in javascript</h2>
+        <h2>DOM help us to creat html elements</h2>
+        <h2>DOM help us to modify html elements</h2>
+        <input type="text" id="d1"><br>
+        <input type="text" id="d2"><br>
+        <button onclick="add()">add above numbers</button>
+        <h1 id="res"></h1>
+        <hr>
+        <input type="text" id="a1"><br>
+        <input type="text" id="a2"><br>
+        <button onclick="sub()">add above numbers</button>
+        <h1 id="aes"></h1>
+        <hr>
+        <input type="text" id="s1"><br>
+        <input type="text" id="s2"><br>
+        <button onclick="multiply()">add above numbers</button>
+        <h1 id="zes"></h1>
+        <hr>
+        <input type="text" id="f1"><br>
+        <input type="text" id="f2"><br>
+        <button onclick="div()">add above numbers</button>
+        <h1 id="fes"></h1>
+
+
+        
+        <script>
+            function add(){
+                var x = +document.getElementById("d1").value;
+                var y = +document.getElementById("d2").value;
+                document.getElementById("res").innerHTML=x+y
+
+            }
+
+
+            function sub(){
+                var x = +document.getElementById("a1").value;
+                var y = +document.getElementById("a2").value;
+                document.getElementById("aes").innerHTML=x-y
+            }
+
+            function multiply(){
+                var x = +document.getElementById("s1").value;
+                var y = +document.getElementById("s2").value;
+                document.getElementById("zes").innerHTML=x*y
+            }
+
+            function div(){
+                var x = +document.getElementById("f1").value;
+                var y = +document.getElementById("f2").value;
+                document.getElementById("fes").innerHTML=x/y
+            }
+
+
+
+
+
+        </script>
+    </body>
+</html>

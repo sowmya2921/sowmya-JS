@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <style>
+            h1{
+                color: blue;
+                background-color: chartreuse;
+                border: 1px solid;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 onclick="alert('why did you click me')">lets understand the events</h1>
+        <h1 onmouseover="alert('hello')">this is another header</h1>
+        <h1 onclick="abc(this,event)">today topic is events</h1>
+        <form>
+            <input type="text" name="firstname" onfocus="this.size='40'" onblur="this.size='20'">
+            <input type="radio">
+            <input type="radio">
+            <input type="checkbox">
+            <select name="" id="">
+                <option value="">USA</option>
+                <option value="">russia</option>
+                <option value="">france</option>
+                <option value="">india</option>
+            </select>
+            <button>save</button>
+        </form>
+
+        <script>
+            function abc(el,ev){
+                el.style.color='pink'
+                el.style.backgroundColor='red'
+                console.dir(ev)
+            }
+            
+        </script>
+
+    </body>
+</html>
