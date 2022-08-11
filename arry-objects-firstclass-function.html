@@ -1,0 +1,64 @@
+<html>
+    <body>
+        <script>
+            var students = [
+                {
+                    name: 'sowmya',
+                    ade:19,
+                    gender:'female',
+                    place:'hydrabad'
+                },
+                {
+                    name: 'deepu',
+                    ade:29,
+                    gender:'male',
+                    place:'pune'
+                },
+                {
+                    name: 'aarush',
+                    ade:35,
+                    gender:'male',
+                    place:'kolkata'
+                },
+            ];
+
+            var x = students.filter(function(a){
+                if(a.gender==='male'){
+                    return true
+                }
+            })
+            console.log(x)
+
+            var y = students.filter(function(a){
+                if(a.gender==='female'){
+                    return true
+                }
+            })
+            console.log(y)
+
+            students.slot(function(a,b){
+                if(a.name>b.name){
+                    return 1
+                }
+                else{
+                    return -1
+                }
+            })
+            console.log(students)
+
+            students.slot(function(a,b){
+                if(a.place>b.place){
+                    return 1
+                }
+                else{
+                    return -1
+                }
+            })
+            console.log(students)
+            
+
+
+        </script>
+    </body>
+
+</html>
