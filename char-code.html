@@ -1,0 +1,39 @@
+<html>
+    <body>
+        <script>
+            var num = "0123456789"
+            for(i=0;i<=num.length-1;i++){
+                console.log(num.charCodeAt(i))
+            }
+            
+            var letr = "AazZ"
+            for(i=0;i<=letr.length-1;i++){
+                console.log(letr.charCodeAt(i))
+            }
+
+            var a = 100
+            console.log(isNaN(a))
+
+            var n = "200"
+            console.log(isNaN(n))
+
+            var s = "sowmya"
+            console.log(isNaN(s))
+
+            var myplate = "HR26BK7538"
+            for(i=0;i<=myplate.length-1;i++){
+                if(isNaN(myplate[i])===false){
+                    console.log(myplate[i])
+                }
+            };
+
+            for(i=0;i<=myplate.length-1;i++){
+                if(isNaN(myplate[i])===true){
+                    console.log(myplate[i])
+                }
+            }
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+    <body>
+        
+        <script>
+            var obj = {
+            name:'sowmya',
+            age:27,
+            gender:'femal',
+            place:'banglore'
+        }
+        console.dir(Object)
+        console.dir(Object.entries(obj))
+        console.log(Object.keys(obj))
+        console.log(Object.values(obj))
+        obj.likes='sweets'
+        console.log(obj)
+        Object.freeze(obj)
+        obj.occupation='director'//not applied on obj//
+        console.log(obj)
+        obj.age=33//not applied on obj//
+        console.log(obj)
+        
+
+        var obj2 = {
+            name:'deepu',
+            age:32,
+            gender:'male',
+            place:'banglore'
+        }
+        console.log(obj2)
+        Object.seal(obj2)
+        obj2.like='icecream'
+        console.log(obj2)
+        obj2.age=35
+        console.log(obj2)
+
+
+
+
+        </script>
+    </body>
+</html>

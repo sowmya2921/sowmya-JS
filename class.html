@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <script>
+            function mul(a,b,cb){
+	        if(a.isNaN||b.isNaN){
+		cb("Please provide a number only",null)
+	}
+	else
+    {
+		cb(null,a*b)
+	}
+}
+
+mul(9,5,function(err,res){
+	if(err)
+    {
+		console.log(err)
+	}
+	else
+    {
+		console.log(res)
+	}
+})
+
+    
+        </script>
+    </body>
+</html>
