@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <script>
+            var x = Date.now();
+            console.log(x)
+
+            var today = new Date()
+            console.log(today)
+            console.dir(today)
+            console.dir(today.getDate())
+            console.dir(today.getHours())
+            console.dir(today.getMinutes())
+            console.dir(today.getSeconds())
+            console.dir(today.getDay())
+            console.dir(today.getMonth())
+            console.dir(today.getFullYear())
+            //console.dir(today.getyear())//
+            console.dir(today.getTime())
+
+            //calculating age //
+            var bday = new Date("05-29-1995")
+            var today = new Date()
+            var agetime = today.getTime()-bday.getTime()
+            console.log(agetime)
+            var age = agetime/(1000*60*60*24*365)
+            console.log(age)
+        </script>
+    </body>
+</html>

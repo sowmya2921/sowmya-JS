@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        <h1>
+            <span id="hrs"></span>:
+            <span id="mins"></span>:
+            <span id="sec"></span>
+        </h1>
+        <script>
+            setInterval(function(){
+                var ctime = new Date();
+                var hrs = ctime.getHours();
+                var mins = ctime.getMinutes();
+                var sec = ctime.getSeconds();
+                document.getElementById("hrs").innerHTML=hrs;
+                document.getElementById("mins").innerHTML=mins;
+                document.getElementById("sec").innerHTML=sec;
+            },1000)
+
+        </script>
+    </body>
+</html>

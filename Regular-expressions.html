@@ -1,0 +1,30 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var x = "sowmya born on 29 may 1995, deepu born on 21 april 1990."
+            var z = new RegExp("29") //one type//
+            var s = z.test(x)
+            console.log(s)
+
+            var z = /sowmya/ //second type//
+            var s = z.test(x)
+            console.log(s)
+
+            var y = new RegExp("aarush")
+            var s = y.test(x)
+            console.log(s)
+
+            var y = /Deepu/
+            var s = y.test(x)
+            console.log(s)
+
+            var y = /Deepu/i
+            var s = y.test(x)
+            console.log(s)
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <h1>this is first header</h1>
+        <ul>
+            <li>kashmir</li>
+            <li><h1>manali</h1></li>
+            <li>munnar</li>
+            <li><h1>araku</h1></li>
+            <li>hyderabad</li>
+        </ul>
+        <script>
+            var x = document.getElementsByTagName("h1")
+            for(var i=0;i<=x.length-1;i++){
+                x[i].style.color="red"//HTMLcollection//
+            }
+
+            var y = document.querySelectorAll("li")
+            y.forEach(function(el){
+                el.style.backgroundColor="lightblue"
+            })//Nodelist//
+
+        </script>
+    </body>
+</html>
