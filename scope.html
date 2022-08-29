@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script>
+            //console.log(y)//referenceerror//
+        </script>
+        <script src="ext.js"></script>
+        <script>
+            var x = 100
+            console.log(y)  
+        </script>
+    </head>
+    <body>
+        <script>
+            console.log(x);
+            console.log(y);
+
+           function abc(){
+            var h = 300;
+            console.log(x) //global scope//
+            var x = 333;
+            function xyz(){
+                var g = 999;
+                console.log(x);
+                console.log(h) //closure scope//
+            }
+            var f = 888
+            console.dir(xyz)
+            {
+                let s = 444
+                function pqr(){
+                    console.log(h)
+                    console.log(f)
+                    console.log(s) //block scope//
+                }
+                console.dir(pqr)
+            }
+    
+            
+           }
+           abc()
+        
+
+    
+        </script>
+    </body>
+</html>

@@ -2,46 +2,43 @@
     <head>
         <style>
             .delhi{
-                background-color:lightcoral;
+                background-color: lightcoral;
             }
             .kolkata{
-                border: 10px solid blueviolet;
+                border:10px solid blue;
             }
             .hyderabad{
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
         </style>
     </head>
     <body>
-        <h1 id="d1">welcome to application of classnames to element</h1>
-        <button onclick="dh">apply delhi class</button>
-        <button onclick="kk">apply kolkata class</button>
-        <button onclick="hd">append hyderabad class</button>
-        <button onclick="rkk">remove kolkata class</button>
+        <h1 id="d1">Welcome to application of classnames to elements</h1>
+        <button onclick="dh()">apply delhi class</button>
+        <button onclick="kk()">apply kolkata class</button>
+        <button onclick="hd()">append hyderabad class</button>
+        <button onclick="rkk()">remove kolkata class</button>
 
         <script>
-
             function dh(){
-                document.getElementById("d1").className='delhi'
+                document.getElementById('d1').className='delhi'
             }
-
             function kk(){
-                document.getElementById("d1").className="kolkata"
+                document.getElementById('d1').className='kolkata'
             }
-
             function hd(){
-                document.getElementById("d1").classList.add("hyderabad")
+                document.getElementById('d1').classList.add('hyderabad')
             }
-
             function rkk(){
-                document.getElementById("d1").classList.remove("kolkata")
+                document.getElementById('d1').classList.remove('kolkata')
             }
-        
 
-            //className = replace[removing old adding new]//
+
+			//className = replace[removing old adding new]//
             //claaList.add = existing[including old one adding new one]//
             //claaList.remove = remove[remove the class function]
-
         </script>
+
+
     </body>
 </html>
