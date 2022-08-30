@@ -1,0 +1,70 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function div(a,b,cbd){
+                if (b===0){
+                    cbd("denominator cannot be zero",null)
+                }
+                else{
+                    cbd(null,a/b)
+                }
+            }
+
+            div(12,0,function(err,res){
+                if(err){
+                   console.log(err) 
+                }
+                else{
+                    console.log(res)
+                }
+            })
+
+
+            function mul(a,b,cbf){
+                if(isNaN(a)||isNaN(b)){
+                    cbf("arguments should be a number",null)
+                }
+                else{
+                    cbf(null,a*b)
+                }
+            }
+
+            mul(12,3,function(err,res){
+                if(err){
+                    console.log(err)
+                }
+                else{
+                    console.log(res)
+                }
+            })
+
+            mul(12,"sowmya",function(err,res){
+                if(err){
+                    console.log(err)
+                }
+                else{
+                    console.log(res)
+                }
+            })
+
+            mul("deepu",3,function(err,res){
+                if(err){
+                    console.log(err)
+                }
+                else{
+                    console.log(res)
+                }
+            })
+
+            mul("sowmya","deepu",function(err,res){
+                if(err){
+                    console.log(err)
+                }
+                else{
+                    console.log(res)
+                }
+            })
+        </script>
+    </body>
+</html>

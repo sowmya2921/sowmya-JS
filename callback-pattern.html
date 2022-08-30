@@ -1,0 +1,30 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            function add(a,b){
+                console.log(a+b)
+            }
+            add(10,20) // normall add function//
+
+
+            function sum(a,b,cb){
+                cb(a+b)
+            }
+            sum(20,30,function(res){console.log(res)})//callback pattern//
+
+
+            function div(a,b,cbd){
+                cbd(a/b)
+            }
+            div(10,5,function(res){console.log(res )})
+
+            function mul(a,b,cbm){
+                cbm(a*b)
+            }
+            mul(10,2,function(res){console.log(res)})
+
+
+        </script>
+    </body>
+</html>
