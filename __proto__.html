@@ -1,0 +1,27 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            var ob1 = {
+                a:100,
+                b:200
+            }
+            console.log(ob1)
+
+            var ob2 = {
+                p:333,
+                q:444
+            }
+            console.log(ob2)
+            console.log(ob1.a)
+            console.log(ob1.b)
+            ob1.__proto__=ob2
+            console.log(ob1.p) //we can access because of __proto__//
+            console.log(ob1.q) 
+
+            
+        </script>
+    </body>
+</html>

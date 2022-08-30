@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <body>
+            <script>
+                function mobile(model,ram,processor,storage,color,pr,dsc){
+                this.model = model;
+                this.ram = ram;
+                this.processor = processor;
+                this.storage = storage;
+                this.color = color;
+                this.price = pr;
+                this.discount = dsc;
+                this.finalprice = function(){
+                    console.log(this.price-(this.price*this.discount/100)) //abstraction//
+                }
+                }
+
+                var mb1 = new mobile("x60","12gb","sd870","128gb","black",34500,12);
+                mb1.finalprice()
+
+                var mb2 = new mobile("samsunggs9","8gb","exinos","128gb","blue",56000,20);
+                mb2.finalprice()
+            </script>
+        </body>
+    </head>
+</html>
