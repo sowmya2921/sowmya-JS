@@ -1,0 +1,21 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var httpobj = new XMLHttpRequest();
+            console.log(httpobj)
+
+            httpobj.open('GET','https://restcountries.com/v2/all'); //till here its only prepartion//
+            httpobj.send() //now its send the request to the server and got the response in the network tab//
+            httpobj.onloadend=function(){
+                console.log(httpobj.response) //now printed the data in the console//
+            }
+
+            httpobj.onreadystatechange=function(){
+                console.log(httpobj.readyState)
+            } // cheack the readystate//
+
+    
+        </script>
+    </body>
+</html>

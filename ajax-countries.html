@@ -1,0 +1,24 @@
+<html>
+    <head></head>
+    <body>
+        <ul id="dd"></ul>
+        <script>
+
+            var x = new XMLHttpRequest();
+            x.open('GET','https://restcountries.com/v2/all');
+            x.send()
+            x.onloadend = function(){
+                var coutries = JSON.parse(x.response); //it will convert string to object//
+                coutries.forEach(function(country,i){
+                    var newli = document.createElement('li');
+                    newli.innerHTML = country.name;
+                    var flagImg = document.createElement('img');
+                    flagImg.src=country.flag;
+                    flagImg.style.width='100px';
+                    newli.appendChild(flagImg)
+                    document.getElementById('dd').appendChild(newli)
+                });
+            }
+        </script>
+    </body>
+</html>

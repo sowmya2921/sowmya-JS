@@ -1,0 +1,14 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            async function mul(a,b){
+                var ans = await a*b
+                return ans
+            }
+
+            mul(12,3).then(function(res){console.log(res)})
+            .catch(function(err){console.log(err)})
+        </script>
+    </body>
+</html>
