@@ -1,0 +1,48 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let add = function(a,b){
+                console.log(a+b)
+            }
+            add(10,20)
+
+            let sub =(a,b)=>{
+                console.log(a-b)
+            }
+            sub(100,50) //arrow function//
+
+            //let sum = (a,b)=>{
+            //  return (a+b)
+            //}
+
+            let sum = (a,b)=>(a+b)
+            sum(10,10)
+
+            var ar = [12,49,29,10,33,22,16]
+            var br = ar.filter(function(a){
+                if(a%2===0){
+                    return true
+                }
+                else{
+                    return false
+                }
+            })
+            console.log(ar)
+            console.log(br)
+
+            var cr = [12,121,32,33,45,78]
+            var dr = cr.filter((a)=>a%2===0?true:false)
+            console.log(cr)
+            console.log(dr)
+
+            var a = [32,11,55,56,98,79]
+            var b = a.filter(a=>a%2==0)
+            console.log(a)
+            console.log(b)
+
+            
+
+        </script>
+    </body>
+</html>

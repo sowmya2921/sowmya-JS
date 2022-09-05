@@ -1,0 +1,71 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var a = 100
+            var a = 200
+
+            let b = 100
+            //let b = 200//syntaxerror
+
+            let add = function(a,b){
+                console.log(a+b)
+            }
+            add = function(a,b){
+                return a+b
+            }
+
+            const sub = function(a,b){
+                console.log(a-b)
+            }
+            //sub = function(a,b){
+              //  console.log(a-b)
+            //}//typeerror
+
+
+            const p = 300
+           // p = 400//it willnot reassigne the value//
+
+           const ar = [10,20,30,40,50]
+          // ar = [11,22,33]//it willnot reassigne the value of arry//
+
+          ar[1]=100 //we can modify the value of arry//
+          console.log(ar)
+
+
+          const obj = {
+            firstname:"sowmya"
+          }
+          console.log(obj)
+          firstname="deepu"
+          obj.firstname="aarush"//modify//
+          console.log(obj)
+          obj.lastname="deepu"//add//
+          console.log(obj)
+
+          const x = {
+            firstname:"gubbi",
+            lastname:"shankar"
+          }
+          console.log(x)
+
+          
+          Object.seal(x) //we can exist but not able to add the property//
+          x.firstname="sowmya"
+          x.age=27
+          console.log(x)
+
+          Object.freeze(x) //we cannot add and exist property it is mutability//
+          x.firstname="arrush"
+          x.age=04
+          console.log(x)
+
+          
+          
+          
+
+
+
+        </script>
+    </body>
+</html>

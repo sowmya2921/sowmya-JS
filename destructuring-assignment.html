@@ -1,0 +1,36 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            var ar = [11,34,19,49,39]
+            console.log(ar)
+            var a = ar[0]
+            var b = ar[2]
+            console.log(a,b)
+
+            var [x,y] = ar//destructuring arry we use []//
+            console.log(x,y)
+            var [a,,b] = ar
+            console.log(a,b)
+
+            var obj = {
+                firstname:"sowmya",
+                lastname:"deepu",
+                age:27,
+                address:{
+                    pincode:560078,
+                    city:"banglore"
+                }
+            }
+
+            console.log(obj.firstname)
+            
+            var {firstname,lastname,age,address:{pincode,city}} = obj // destructuring object we use {}//
+            console.log(firstname)
+            console.log(lastname)
+            console.log(age)
+            console.log(pincode)
+            console.log(city)
+        </script>
+    </body>
+</html>
